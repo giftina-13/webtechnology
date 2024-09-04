@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: hsl(0, 36%, 65%);
+  }
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #8d9f97, #4fc6ba);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #dde6db, #03af2e);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(46, 68, 53, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color: #335650;
+    padding-bottom: 10px;
+  }
+  
+  
+  
+  ul {
+    list-style-type:square; 
+    padding-left: 20px;
+  }
+
+  p {
+    color: darkolivegreen;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  
