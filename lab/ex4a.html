@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image:url(k4.jpeg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }
+        form {
+           padding-left: 500px;
+           padding-top: 50px;
+           font-size: 20px;
+           font-weight: bold;
+        }
+        input[type="text"],input[type="tel"] {
+            height: 30px;
+            width:250px;
+            margin:2px;
+        }
+        input[type="email"] {
+            height: 30px;
+            width:500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form action="msg.html" method="post" novalidate>
+            <label for="name">Name:</label><br>
+            <div class="input-row">
+                <input type="text" id="firstname" placeholder="first name" required>
+                <input type="text" id="lastname" placeholder="last name" required>
+            </div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="abc@gmail.com" required><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" placeholder="street name1" required>
+            <input type="text" id="address2" placeholder="street name2" required>
+            <div class="input-row">
+                <input type="text" id="city" placeholder="city" required>
+                <input type="text" id="zipcode" placeholder="zipcode" required><br>
+                <input type="text" id="country" placeholder="country" required>
+            </div><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other">
+            <label for="other">Other</label>
+            <br></br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br>
+            <br>
+            <label for="membership">Do You Want The Membership:</label><br>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="Yes">
+            <label for="No">No</label>
+            <input type="radio" id="No">
+            <p>If you want membership<p>
+            <label for="ms">what kind of membership do you want:</label><br>
+            <select id="ms" name="membership">
+                <option value="individual">Individual</option>
+                <option value="family">Family</option>
+                <option value="company">Company</option>
+            </select><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
