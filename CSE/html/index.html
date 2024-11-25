@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grave Digging Fun Predictor</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #2b2d42;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            height: 400px;
+            background-color: #edf2f4;
+            border-radius: 12px;
+            border: 2px solid #2b2d42;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .grave {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 60px;
+            height: 150px;
+            background-color: #8d99ae;
+            border-radius: 10px 10px 5px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grave::before {
+            content: "⚰️";
+            font-size: 2rem;
+        }
+
+        .man {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: #ef233c;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #2b2d42;
+            font-weight: bold;
+        }
+
+        input[type="number"], select {
+            margin-top: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 2px solid #8d99ae;
+            width: 220px;
+            font-size: 1rem;
+        }
+
+        select[multiple] {
+            height: 140px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ef233c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d90429;
+        }
+    </style>
+</head>
+<body>
+<h2>Grave Digging Predictor</h2>
+<div class="container">
+    <div class="grave"></div>
+    <div class="man" id="man">👷‍♂️</div>
+</div>
+
+<form id="deathPredictorForm" style="text-align: center;" action="http://localhost:8080/CSE/DeathPredictionServlet" method="POST">
+    <label for="age">Enter your Age:</label>
+    <input type="number" id="age" name="age" min="1" max="100" required>
+
+    <label for="gender">Select Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+
+    <label for="foods">Choose Food Items:</label>
+    <select id="foods" name="foods" multiple size="10" required>
+        <option value="1">Briyani</option>
+        <option value="2">Chicken 65</option>
+        <option value="3">pani puri</option>
+        <option value="4">Ice Cream</option>
+        <option value="5">Spring Potato</option>
+        <option value="6">Carbonated Drinks</option>
+        <option value="7">Burger</option>
+        <option value="8">Pizza</option>
+        <option value="9">Pasta</option>
+        <option value="10">Fried Rice</option>
+    </select>
+
+    <button type="submit">Predict and Dig</button>
+</form>
+
+</body>
+</html>

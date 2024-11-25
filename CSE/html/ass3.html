@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Counter</title>
+    <style>
+        h2 {
+            background-color: rgb(240, 128, 145);
+            border-left: 6px solid rgb(205, 56, 66);
+            text-align: center;
+        }
+        body {
+            background-color: rgb(10, 233, 166);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Page Counter</h2>
+
+    <form action="http://localhost:8080/CSE/visitCounter" method="GET">
+        <label for="userId">Enter your ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
