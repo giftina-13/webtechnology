@@ -50,5 +50,13 @@
         <servlet-name>KitchenAppliancesServlet2</servlet-name>
         <url-pattern>/kitchenForm</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>KitchenAppliancesServlet3</servlet-name>
+        <servlet-class>KitchenAppliancesServlet3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KitchenAppliancesServlet3</servlet-name>
+        <url-pattern>/kitchenhttpsession</url-pattern>
+    </servlet-mapping>
 
 </web-app>
