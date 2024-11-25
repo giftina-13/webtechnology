@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitchen Appliances Form</title>
+    <style>
+        body {
+            background-color: rgb(139, 240, 185);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="http://localhost:8080/CSE/kitchenForm">
+        <label for="user_name">Your Name:</label>
+        <input type="text" id="user_name" name="user_name" required><br><br>
+        <label for="appliance_type">Choose an Appliance:</label>
+        <select id="appliance_type" name="appliance_type">
+            <option value="Mixer">Mixer</option>
+            <option value="Grinder">Grinder</option>
+            <option value="Cooker">Cooker</option>
+            <option value="Stove">Stove</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
