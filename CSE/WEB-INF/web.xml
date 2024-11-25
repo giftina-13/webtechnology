@@ -42,5 +42,13 @@
         <servlet-name>KitchenAppliancesServlet</servlet-name>
         <url-pattern>/kitchencookies</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>KitchenAppliancesServlet2</servlet-name>
+        <servlet-class>KitchenAppliancesServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KitchenAppliancesServlet2</servlet-name>
+        <url-pattern>/kitchenForm</url-pattern>
+    </servlet-mapping>
 
 </web-app>
