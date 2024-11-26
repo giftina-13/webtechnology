@@ -66,5 +66,13 @@
         <servlet-name>KitchenAppliancesServlet4</servlet-name>
         <url-pattern>/kitchenurl</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>KitchenAppliancesServlet5</servlet-name>
+        <servlet-class>KitchenAppliancesServlet5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KitchenAppliancesServlet5</servlet-name>
+        <url-pattern>/kitchenAppliancesServlet5</url-pattern>
+    </servlet-mapping>
 
 </web-app>
