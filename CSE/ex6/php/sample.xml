@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+    <Item>
+        <Name>Toaster</Name>
+        <Type>Appliance</Type>
+        <Category>Kitchen</Category>
+    </Item>
+    <Item>
+        <Name>Blender</Name>
+        <Type>Appliance</Type>
+        <Category>Kitchen</Category>
+    </Item>
+    <Item>
+        <Name>Refrigerator</Name>
+        <Type>Appliance</Type>
+        <Category>Kitchen</Category>
+    </Item>
+    <Item>
+        <Name>Laptop</Name>
+        <Type>Electronics</Type>
+        <Category>Office</Category>
+    </Item>
+    <Item>
+        <Name>Television</Name>
+        <Type>Electronics</Type>
+        <Category>Living Room</Category>
+    </Item>
+</Items>
